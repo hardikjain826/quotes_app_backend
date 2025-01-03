@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Quote = require('../../models/Quote');
+const Quote = require('../models/Quote');
 
 const connectToDatabase = async () => {
   if (!mongoose.connection.readyState) {
