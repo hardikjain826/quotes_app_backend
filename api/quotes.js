@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Quote = require('../models/Quote');
 
-mongoose.set('strictQuery', true);
+mongoose.set('strictQuery', false);
 const connectToDatabase = async () => {
   if (!mongoose.connection.readyState) {
     await mongoose.connect(process.env.MONGO_URI, {
